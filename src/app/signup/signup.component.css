@@ -1,0 +1,14 @@
+#id1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+body{
+    background-image: url("/assets/4k.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}

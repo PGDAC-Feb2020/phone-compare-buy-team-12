@@ -1,0 +1,53 @@
+<div class="container-fluid">
+  
+    <div class="row " style="height: 2px;background-color: rgba(157, 240, 23, 0.863);"></div>
+
+
+    <div class="row justify-content-center" style="height: 550px; background-image: url(/assets/pix.jpg);background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div
+          class="col-12 col-md-6  rounded d-flex 
+          justify-content-center align-items-center "
+        >
+        
+        <div class="loginbox"  style="margin-top: 30px; border-radius: 15px;" [formGroup]="fbFormGroup">
+            <img src="./assets/user.png" class="user" style="border-radius: 50%;">
+                    <h3 style="color:white">Login</h3>
+                    
+                        <div>
+                        <input type="text" name="" placeholder="Enter Email"  class="form-control" formControlName="email">
+                      </div>
+                      <div>
+                        <input type="password" name="" placeholder="Enter Password"  class="form-control" formControlName="password">
+                      </div>
+                      <div class="alert alert-danger" role="alert" *ngIf="InvalidData"> 
+                        Invalid Data
+                       </div>
+                        
+                        <input type="submit"  value="sign in" [disabled]="!fbFormGroup.valid" class="btn btn-outline-light" (click)="loginProcess()" >
+                        <div style="display:none">
+                        {{fbFormGroup.value | json}}
+                      </div> 
+                     
+
+                      <div>
+                        <a routerLink="/forgotpassword">Forgot Password</a> 
+                      </div>
+                      <div>
+                        <a routerLink="/signup">New Registration</a>
+                      </div>
+                      <!-- <div>
+                        <a routerLink="/delete">Delete Account</a>
+                      </div> -->
+                      
+            
+                    
+                </div>
+
+                
+        </div>
+      </div>
+            
+
+
+
+</div>

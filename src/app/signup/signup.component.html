@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+<body>
+    
+
+<div class="container-fluid" >
+
+
+    <!-- <div class="row" style="height: 50px;background-color: black;">
+    
+        <div class=""  ></div>
+    
+        <div class="col-3" id="id1">Top 10 </div>
+    
+        <div class="col-3" id="id1">Upcoming</div>
+    
+        <div class="col-3" id="id1"> Best Picks</div>
+    
+        <div class="col-3" id="id1"> <a routerLink="/compare" style="text-decoration: none; color: white;">Compare  </a></div>
+    
+        
+    
+    
+        </div> -->
+        <div class="row " style="height: 2px;background-color: rgba(157, 240, 23, 0.863);"></div>
+
+
+  
+    <div class="row mt-4" style=" height: 400px;">
+
+
+        <div class="col-3" ></div>
+
+        <div class="col-6 " style="border: solid black; display: flex;">
+
+            <div class="col-6" [formGroup]=fbFormGroup>
+
+            <div style="font-weight: bold; font-size: 30px; margin-top: 10px;"  > Signup</div>
+
+         <div style="margin-top: 20px;"><input type="text" name="" id="name" class="form-control" placeholder="Name" size="35px" formControlName="name" style="opacity: 0.8; border: solid black;"></div>
+
+            <div style="margin-top: 20px;"><input type="text" name="" id="email" class="form-control" placeholder="email id" size="35px" formControlName="email"style="opacity: 0.8; border: solid black;"></div>
+
+            <div style="margin-top: 20px;"><input type="text" name="" id="contact" class="form-control"  placeholder="Contact"size="35px" formControlName="contact"style="opacity: 0.8; border: solid black;"></div>
+
+            <div style="margin-top: 20px;"><input type="text" name="" id="password" class="form-control" placeholder="Password"size="35px"formControlName="password"style="opacity: 0.8; border: solid black;"></div>
+
+            <!-- <div style="margin-top: 20px;"><input type="text" name="" id="cnpf" placeholder="Confirm Password"size="35px"formControlName="confirmpassword"></div> -->
+
+            <!-- <div  style="margin-top: 20px;margin-left: -10px;"><input class="btn btn-block btn-light btn-outline-dark" type="button"  value="Submit" (click)="submitProcess()" [disabled]="!fbFormGroup.valid"></div> -->
+
+            <input type="submit"  value="Register" [disabled]="!fbFormGroup.valid" class="btn btn-outline-dark" (click)="registerProcess()" style="margin-top: 30px;" >
+
+
+            <div style="display:none">  {{fbFormGroup.value | json}} </div>
+        </div>
+        
+        <div class="col-6 " style="display: flex; justify-content: center; align-items: center; padding: 0px; "><i class="fa fa-balance-scale" style="font-size:150px;color: black;"></i></div>
+            
+        </div>
+
+        
+    
+    
+    
+    
+    
+    
+    </div>
+
+    
+    
+            
+
+
+
+</div>
+
+</body>

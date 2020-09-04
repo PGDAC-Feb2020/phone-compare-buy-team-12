@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+
+<div class="container-fluid">
+
+
+    <div class="row" style="height: 50px;background-color: black;">
+    
+        <div class=""  ></div>
+        
+        <div class="col-1"></div>
+    
+        <div class="col-2" id="id1">Top 10 </div>
+    
+        <div class="col-2" id="id1">Upcoming</div>
+    
+        <div class="col-2" id="id1"> Best Picks</div>
+    
+        <div class="col-2" id="id1"> <a routerLink="/compare" style="text-decoration: none; color: white;">Compare  </a></div>
+
+        <div class="col-2" id="id1"><button type="button" class="btn btn-dark" (click)="logout()">Logout</button></div>
+    
+        
+    
+    
+        </div>
+        <div class="row " style="height: 2px;background-color: rgba(157, 240, 23, 0.863);"></div>
+
+
+    
+    <div class="row " style="height: 400px; margin-top: 30px;">
+
+
+        <div class="col-3" ></div>
+
+        <div class="col-6 " style="border: solid black; display: flex;">
+
+            <div class="col-6" [formGroup]=fbFormGroup>
+
+            <div style="font-weight: bold; font-size: 30px; margin-top: 10px;"  > Buy</div>
+
+         <div style="margin-top: 10px;"><input type="text" name="" class="form-control"id="name" placeholder="Name" size="35px" formControlName="name"></div>
+
+            <div style="margin-top: 20px;"><input type="text"class="form-control" name="" id="email" placeholder="email id" size="35px" formControlName="email"></div>
+
+            <div style="margin-top: 20px;"><input type="text"class="form-control"   placeholder="Address" size="35px" formControlName="address"></div>
+
+            <!-- <div style="margin-top: 20px;"><input type="text" name=""  placeholder="product" size="35px" formControlName="product"></div> -->
+            
+            
+          <!-- <div style="margin-top: 20px;"><input type="text"  class="form-control" placeholder="price" size="35px" formControlName="price"></div> -->
+
+
+
+            <div style="margin-top: 20px;"><input type="text"  class="form-control" placeholder="Contact"size="35px" formControlName="contact"></div>
+
+
+
+            
+
+            <!-- <div style="margin-top: 20px;"><input type="text" name="" id="cnpf" placeholder="Confirm Password"size="35px"formControlName="confirmpassword"></div> -->
+
+            <!-- <div  style="margin-top: 20px;margin-left: -10px;"><input class="btn btn-block btn-light btn-outline-dark" type="button"  value="Submit" (click)="submitProcess()" [disabled]="!fbFormGroup.valid"></div> -->
+
+            <input type="submit"  value="Buy SamsungM31 @16000" [disabled]="!fbFormGroup.valid" class="btn btn-outline-dark" (click)="buy2process()" style="margin-top: 15px;" >
+
+
+            <div style="display:none">  {{fbFormGroup.value | json}} </div>
+        </div>
+        
+        
+            
+        </div>
+
+        
+    
+    
+    
+    
+    
+    
+    </div>
+    
+    
+            
+
+
+
+</div>
+
